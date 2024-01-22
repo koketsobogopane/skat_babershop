@@ -2,6 +2,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+//ui toolkit
+import NavLink from '../ui/nav-link';
+
 function MainNavigation() {
   return (
     <>
@@ -10,23 +13,23 @@ function MainNavigation() {
           <Image
             src={'/images/logo/logo1.png'}
             alt="logo"
-            width={150}
-            height={100}
+            width={100}
+            height={50}
           />
         </Link>
         <nav className=' pr-52 '>
-          <ul className=' flex justify-between items-center font-semibold text-xl gap-4'>
+          <ul className=' flex justify-between items-center font-semibold text-lg gap-4'>
             <li>
-              <Link href={'/'}>Home</Link>
+              <NavLink href={'/'}>Home</NavLink>
             </li>
             <li>
-              <Link href={'/about'}>About Us</Link>
+              <NavLink href={'/about'}>About Us</NavLink>
             </li>
             <li>
-              <Link href={'/services'}>Services</Link>
+              <NavLink href={'/services'}>Services</NavLink>
             </li>
             <li>
-              <Link href={'/pricing'}>Pricing</Link>
+              <NavLink href={'/pricing'}>Pricing</NavLink>
             </li>
           </ul>
         </nav>
