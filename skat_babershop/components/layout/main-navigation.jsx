@@ -8,7 +8,7 @@ import NavLink from '../ui/nav-link';
 function MainNavigation() {
   return (
     <>
-      <div className=' flex bg-yellow-500 justify-between items-center p-3'>
+      <div className=' flex bg-yellow-500 justify-between items-center p-3 mb-10'>
         <Link href={'/'} className=' pl-8'>
           <Image
             src={'/images/logo/logo1.png'}
