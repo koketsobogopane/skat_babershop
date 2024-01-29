@@ -5,10 +5,14 @@ import Link from 'next/link';
 //ui toolkit
 import NavLink from '../ui/nav-link';
 
+//React Icons
+
+
 function MainNavigation() {
   return (
     <>
-      <div className=' flex bg-yellow-500 justify-between items-center p-3 mb-10'>
+      <div className=' sticky top-0 w-full  bg-yellow-500 z-50 p-3 mb-10'>
+      <div className=' flex justify-between items-center '>
         <Link href={'/'} className=' pl-8'>
           <Image
             src={'/images/logo/logo1.png'}
@@ -33,6 +37,7 @@ function MainNavigation() {
             </li>
           </ul>
         </nav>
+      </div>
       </div>
     </>
   );
