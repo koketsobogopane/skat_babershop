@@ -1,4 +1,6 @@
+import Link from 'next/link';
 import React from 'react';
+import { FaScissors } from "react-icons/fa6";
 
 const DUMMYDATA = [{
   location: 'Products',
@@ -35,12 +37,16 @@ export default function QuickNav() {
   );
 }
 const QuickNavCard = (props) => {
-
+  
   const { location, description } = props
   return (
-    <div className=' flex flex-col items-center p-4 border-2 rounded-xl shadow-lg '>
+    <Link href={'/'}>
+      <div className=' flex flex-col items-center p-4 border-2 rounded-xl shadow-lg '>
+        <FaScissors size={'50'}/>
       <h3>{location}</h3>
       <p>{description}</p>
     </div>
+    </Link>
+    
   )
 }
