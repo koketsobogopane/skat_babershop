@@ -1,18 +1,24 @@
 import Link from 'next/link';
 import React from 'react';
 import { FaScissors } from "react-icons/fa6";
+import { FaLocationArrow } from 'react-icons/fa6';
+import { FaPiggyBank } from 'react-icons/fa6';
 
 const DUMMYDATA = [{
-  location: 'Products',
-  description: 'Check out our self care Products'
+  location: 'Services',
+  description: 'Check out all the services we offer',
+  icon: <FaScissors size={50}/>
+},
+{
+  location: 'Location',
+  description: 'Get our direction here.',
+  
+  icon: <FaLocationArrow size={50}/>
 },
 {
   location: 'Products',
-  description: 'Check out our self care Products'
-},
-{
-  location: 'Products',
-  description: 'Check out our self care Products'
+  description: 'Check out our self care Products',
+  icon: <FaPiggyBank size={50}/>
 }
 ]
 export default function QuickNav() {
@@ -27,6 +33,7 @@ export default function QuickNav() {
               <QuickNavCard
                 location= {element.location}
                 description = { element.description}
+                icon = {element.icon}
                 />
             )
           }
@@ -38,11 +45,11 @@ export default function QuickNav() {
 }
 const QuickNavCard = (props) => {
   
-  const { location, description } = props
+  const { location, description, icon } = props
   return (
     <Link href={'/'}>
       <div className=' flex flex-col items-center p-4 border-2 rounded-xl shadow-lg '>
-        <FaScissors size={'50'}/>
+        {icon}
       <h3>{location}</h3>
       <p>{description}</p>
     </div>
