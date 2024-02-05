@@ -28,12 +28,13 @@ export default function QuickNav() {
         <p>Quick travel to what we offer</p>
         <div className=' flex items-center content-center gap-6 pt-4 pb-4'>
         {DUMMYDATA.map(
-          (element)=> {
+          (element,i)=> {
             return (
               <QuickNavCard
                 location= {element.location}
                 description = { element.description}
                 icon = {element.icon}
+                key={element.location}
                 />
             )
           }
