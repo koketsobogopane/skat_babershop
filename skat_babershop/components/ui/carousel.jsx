@@ -1,25 +1,20 @@
 
 import React from 'react';
 
-const CenterMode = () => {
-  const settings = {
-    infinite: true,
-speed: 500,
-slidesToShow: 6,
-slidesToScroll: 5,
-swipeToSlide: true,
-autoplay: true,
-arrows: false,
-dots: false
-  };
-
-  return (
-   
+const Carousel = () => {
   
-      <div><h1>This should be carousel!!</h1></div>
-
-      
+  const { slides } = props
+  return (
+    <div>
+      <div>
+        {
+          slides.map((slide)=> {
+            return <img src='slide' alt='slide' />
+          })
+        }
+      </div>
+    </div>
   );
 };
 
-export default CenterMode;
+export default Carousel;
