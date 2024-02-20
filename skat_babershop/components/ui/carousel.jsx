@@ -16,18 +16,21 @@ const Carousel = (props) => {
   };
 
   return (
-    <div className=" overflow-hidden relative ">
-      <div
-        className={' flex transition ease-out duration-40 '}
-        style={{
-          transform: `translateX(-${current * 100}%)`,
-        }}
-      >
-        {slides.map((slide) => {
-          return (
-            <img src={`/images/slides/${slide}`} key={slide} alt="slide" />
-          );
-        })}
+    <div className="relative mx-auto max-w-md overflow-hidden rounded-2xl">
+      <div className="flex overflow-hidden transition-transform duration-300">
+        {slides.map((slide, index) => (
+          <div
+            // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
+            key={index}
+            className={`w-full${index === current ? '' : ' hidden'}`}
+          >
+            <img
+              src={`/images/slides/${slide}`}
+              alt="slide"
+              className="w-full h-px sm:h-64 md:h-96 object-cover"
+            />
+          </div>
+        ))}
       </div>
       <div className="flex justify-between absolute top-0 h-full w-full items-center">
         <button type="button" onClick={previousSlide}>
