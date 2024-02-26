@@ -25,7 +25,8 @@ const Carousel = (props) => {
             className={`w-full${index === current ? '' : ' hidden'}`}
           >
             <img
-              src={`/images/slides/${slide}`}
+              // src={`/images/slides/${slide}`}
+              src={`../../public/Images/slides${slide}`}
               alt="slide"
               className="w-full h-px sm:h-64 md:h-96 object-cover"
             />
