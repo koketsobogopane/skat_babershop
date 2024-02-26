@@ -1,6 +1,7 @@
 //NextJS toolkit
 import Image from 'next/image';
 import Link from 'next/link';
+import logoImage from '../../public/Images/logo/logo1.png'
 
 //ui toolkit
 import NavLink from '../ui/nav-link';
@@ -14,7 +15,8 @@ function MainNavigation() {
         <div className=" flex justify-between items-center ">
           <Link href={'/'} className=" pl-8">
             <Image
-              src={'/images/logo/logo1.png'}
+              // src={'/logo/logo1.png'}
+              src={logoImage}
               alt="logo"
               width={100}
               height={50}
