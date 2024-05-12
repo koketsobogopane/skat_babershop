@@ -4,7 +4,7 @@ import bannerImg from '../../public/Images/banner/Banner.png'
 
 export default function Banner() {
   return (
-    <div className=" flex justify-center items-center ml-5 mr-5">
+    <div className=" flex justify-center items-center ml-5 mr-5 mt-10">
       <Image
         className="  rounded-xl"
         priority

@@ -7,7 +7,7 @@ import Footer from './footer';
 
 export default function Layout(props) {
   return (
-    <Fragment>
+    <Fragment >
       <MainNavigation />
       {props.children}
       <Footer />

@@ -15,7 +15,7 @@ export default function ServiceSection() {
     'slide10.jpg'
   ]
   return (
-    <div className='flex flex-col items-center'>
+    <div className='flex flex-col items-center pl-2 pr-2'>
       <h2 className=' font-bold text-3xl text-center md:text-left'>Check out Some of the awesome Cuts we  have made for our clients!</h2>
        <div className=' w-[60%] m-auto p-11'>
        <Carousel slides={slides}/>

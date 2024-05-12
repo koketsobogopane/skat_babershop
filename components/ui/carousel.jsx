@@ -32,14 +32,14 @@ const Carousel = (props) => {
            </div>
          ))}
        </div>
-       <div className="flex justify-between absolute top-0 h-full w-full items-center">
+       {/* <div className="flex justify-between absolute top-0 h-full w-full items-center">
          <button type="button" onClick={previousSlide}>
            <FaArrowCircleLeft size={50} />
          </button>
          <button type="button" onClick={nextSlide}>
            <FaArrowCircleRight size={50} />
          </button>
-       </div>
+       </div> */}
      </div>
   );
 };
