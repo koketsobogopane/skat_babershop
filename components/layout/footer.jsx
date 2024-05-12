@@ -4,8 +4,8 @@ import Image from 'next/image';
 
 function Footer() {
   return (
-    <footer className=" flex items-center justify-center">
-      <div className=" text-black flex items-center justify-center gap-96 pt-4 pb-4 w-96 pr-96 pl-96 border-solid border-0 border-t  ">
+    <footer className=" md:flex items-center justify-center bg-gray-100">
+      <div className=" text-black flex flex-col md:flex-row items-center justify-center gap-10 md:gap-96 pt-4 pb-4 md:w-96 md:pr-96 md:pl-96 border-solid border-0 border-t  ">
         <p >
           ©2024 Bogopane Studio. All rights reserved | Designed by
           {' BeastKkDevs '}

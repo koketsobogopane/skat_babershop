@@ -16,7 +16,7 @@ export default function ServiceSection() {
   ]
   return (
     <div className='flex flex-col items-center'>
-      <h2 className=' font-bold text-3xl'>Check out Some of the awesome Cuts we  have made for our clients!</h2>
+      <h2 className=' font-bold text-3xl text-center md:text-left'>Check out Some of the awesome Cuts we  have made for our clients!</h2>
        <div className=' w-[60%] m-auto p-11'>
        <Carousel slides={slides}/>
        </div>

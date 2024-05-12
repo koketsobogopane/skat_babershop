@@ -25,22 +25,22 @@ const Carousel = (props) => {
             className={`w-full${index === current ? '' : ' hidden'}`}
           >
             <img
-              src={`/images/slides/${slide}`}
+              src={`/images/slides/slide1.jpg`}
               alt="slide"
-              className="w-full h-px sm:h-64 md:h-96 object-cover"
+              className="w-full md:h-px sm:h-96  object-cover"
             />
-          </div>
-        ))}
-      </div>
-      <div className="flex justify-between absolute top-0 h-full w-full items-center">
-        <button type="button" onClick={previousSlide}>
-          <FaArrowCircleLeft size={50} />
-        </button>
-        <button type="button" onClick={nextSlide}>
-          <FaArrowCircleRight size={50} />
-        </button>
-      </div>
-    </div>
+           </div>
+         ))}
+       </div>
+       <div className="flex justify-between absolute top-0 h-full w-full items-center">
+         <button type="button" onClick={previousSlide}>
+           <FaArrowCircleLeft size={50} />
+         </button>
+         <button type="button" onClick={nextSlide}>
+           <FaArrowCircleRight size={50} />
+         </button>
+       </div>
+     </div>
   );
 };
 

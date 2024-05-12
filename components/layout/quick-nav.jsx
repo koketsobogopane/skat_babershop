@@ -23,10 +23,10 @@ const DUMMYDATA = [{
 ]
 export default function QuickNav() {
   return (
-    <div className="flex flex-col items-center mt-10">
-        <h2 className=' font-bold text-3xl '>Pick what you want and lets go!</h2>
+    <div className="flex flex-col items-center mt-10 ">
+        <h2 className=' font-bold text-3xl text-center md:text-left '>Pick what you want and lets go!</h2>
         <p>Quick travel to what we offer</p>
-        <div className=' flex items-center content-center gap-6 pt-4 pb-4'>
+        <div className=' flex md:flex-row flex-col items-center content-center gap-6 pt-4 pb-4'>
         {DUMMYDATA.map(
           (element,i)=> {
             return (
