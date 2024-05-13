@@ -32,13 +32,13 @@ function MainNavigation() {
                 <NavLink href={'/'}>Home</NavLink>
               </li>
               <li>
-                <NavLink href={'/about'}>About Us</NavLink>
+                <NavLink href={'/construction'}>About Us</NavLink>
               </li>
               <li>
-                <NavLink href={'/services'}>Services</NavLink>
+                <NavLink href={'/construction'}>Services</NavLink>
               </li>
               <li>
-                <NavLink href={'/pricing'}>Pricing</NavLink>
+                <NavLink href={'/construction'}>Pricing</NavLink>
               </li>
             </ul>
           </nav>
@@ -49,13 +49,13 @@ function MainNavigation() {
                 <NavLink href={'/'}>Home</NavLink>
               </li>
               <li>
-                <NavLink href={'/about'}>About Us</NavLink>
+                <NavLink href={'/construction'}>About Us</NavLink>
               </li>
               <li>
-                <NavLink href={'/services'}>Services</NavLink>
+                <NavLink href={'/construction'}>Services</NavLink>
               </li>
               <li>
-                <NavLink href={'/pricing'}>Pricing</NavLink>
+                <NavLink href={'/construction'}>Pricing</NavLink>
               </li>
             </ul>
         </nav>

@@ -48,7 +48,7 @@ const QuickNavCard = (props) => {
   
   const { location, description, icon } = props
   return (
-    <Link href={'/'}>
+    <Link href={'/construction'}>
       <div className=' flex flex-col items-center p-4 border-2 rounded-xl shadow-lg '>
         {icon}
       <h3>{location}</h3>
