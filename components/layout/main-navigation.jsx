@@ -24,10 +24,10 @@ function MainNavigation() {
               priority
             />
           </Link>
-          <button type='button' className=' md:hidden '><FaBurger size={20}/></button>
+          <button type='button' className=' hidden '><FaBurger size={20}/></button>
 
-          <nav className=" pr-52 md:block hidden">
-            <ul className=" flex justify-between items-center font-semibold text-lg gap-4">
+          <nav className=" pr-52 ">
+            <ul className=" flex md:justify-between md:flex-row flex-col md:static absolute bg-yellow-500 md:min-h-[7vh] min-h-[30vh] w-full left-0 top-[100%] items-center font-semibold text-lg gap-8 md:gap-[4vw]">
               <li>
                 <NavLink href={'/'}>Home</NavLink>
               </li>
@@ -43,22 +43,6 @@ function MainNavigation() {
             </ul>
           </nav>
         </div>
-        <nav>
-        <ul className="hidden flex-col items-center font-semibold text-lg gap-4 ">
-              <li>
-                <NavLink href={'/'}>Home</NavLink>
-              </li>
-              <li>
-                <NavLink href={'/construction'}>About Us</NavLink>
-              </li>
-              <li>
-                <NavLink href={'/construction'}>Services</NavLink>
-              </li>
-              <li>
-                <NavLink href={'/construction'}>Pricing</NavLink>
-              </li>
-            </ul>
-        </nav>
       </div>
     </>
   );
