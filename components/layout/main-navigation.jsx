@@ -33,9 +33,7 @@ function MainNavigation() {
 
           <nav className=" pr-52 ">
             <ul
-              className={` md:z-auto z-[-1] flex md:justify-between md:flex-row flex-col md:static absolute bg-yellow-500 md:min-h-[7vh] min-h-[30vh] w-full left-0 top-[${
-                isOpen ? '100%' : '-400%'
-              }] duration-[450ms] items-center font-semibold text-lg gap-8 md:gap-[4vw]`}
+              className={`md:z-auto z-[-1] flex md:justify-between md:flex-row flex-col md:static absolute bg-yellow-500 md:min-h-[7vh] min-h-[30vh] w-full left-0  ${ isOpen? 'top-[100%]': 'top-[-400%]'} transition-all ease-in-out duration-[450ms] md:opacity-100  items-center font-semibold text-lg gap-8 md:gap-[4vw]`}
             >
               <li>
                 <NavLink href={'/'}>Home</NavLink>
