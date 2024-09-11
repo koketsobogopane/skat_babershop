@@ -1,8 +1,17 @@
+import DescriptiveCard from '@/components/ui/DescriptiveCard';
 import ImageCard from '@/components/ui/ImageCard';
 import React from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { v4 } from 'uuid';
+import image from '../public/Images/logo/Gorge-Logo.jpg'
+import ProductCard from '@/components/ui/ProductCard';
+import { ButtonPrimary } from '@/components/ui/ButtonPrimary';
+import { FaShoppingCart } from 'react-icons/fa';
+import Rating from 'react-rating';
+import { GiHairStrands } from "react-icons/gi";
+import { FaRegStar, FaStar } from 'react-icons/fa6';
+
 
 const test = () => {
   const slides = [
@@ -18,6 +27,7 @@ const test = () => {
     'slide10.jpg',
   ];
 
+  
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -38,6 +48,7 @@ const test = () => {
     },
   };
 
+  const dummyDescription = "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id ratione quo optio nesciunt unde quasi repellendus libero inventore, facilis nobis saepe deleniti sapiente laborum delectus architecto illum, itaque tenetur. Nostrum?"
   return (
     <div className="container mx-auto px-4 pt-9">
       <Carousel
@@ -52,6 +63,24 @@ const test = () => {
           <ImageCard imageSource={`/Images/slides/${slide}`} key={v4()} />
         ))}
       </Carousel>
+        <br />
+        <DescriptiveCard image={image} description={dummyDescription} contentTitle={"Content Title"} />
+        <br />
+        <br />
+        <ButtonPrimary title={"Add To Cart"} icon={<FaShoppingCart/>} />
+        <br />
+        <br />
+        <ProductCard />
+        <br />
+        <br />
+        <Rating emptySymbol={<FaRegStar size={25} />} fullSymbol={<FaStar size={25}/>} />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
     </div>
   );
 };
