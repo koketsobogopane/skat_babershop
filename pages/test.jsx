@@ -1,6 +1,6 @@
 import DescriptiveCard from '@/components/ui/DescriptiveCard';
 import ImageCard from '@/components/ui/ImageCard';
-import React from 'react';
+import React, {useState} from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { v4 } from 'uuid';
@@ -11,9 +11,16 @@ import { FaShoppingCart } from 'react-icons/fa';
 import Rating from 'react-rating';
 import { GiHairStrands } from "react-icons/gi";
 import { FaRegStar, FaStar } from 'react-icons/fa6';
+import CutCard from '@/components/ui/CutCard';
+import DateTimePicker from 'react-datetime-picker';
+import 'react-datetime-picker/dist/DateTimePicker.css';
+import 'react-calendar/dist/Calendar.css';
+import 'react-clock/dist/Clock.css';
 
 
 const test = () => {
+  const [value, onChange] = useState(new Date());
+
   const slides = [
     'slide1.jpg',
     'slide2.jpg',
@@ -78,6 +85,27 @@ const test = () => {
         <br />
         <br />
         <br />
+        <div className="w-[50%]">
+          <CutCard />
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <div className="grid xl:grid-cols-5 md:grid-cols-4 grid-cols-1 gap-4">
+        <CutCard />
+        <CutCard />
+        <CutCard />
+        <CutCard />
+        <CutCard />
+        <CutCard />
+        <CutCard />
+        <CutCard />
+        <CutCard />
+        </div>
+        <br />
+        <br />
+        {/* <DateTimePicker onChange={onChange} value={value} /> */}
         <br />
         <br />
 
